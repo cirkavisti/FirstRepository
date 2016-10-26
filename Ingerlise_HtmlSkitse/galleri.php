@@ -9,6 +9,7 @@
 	<title>Inger Lise Rasmussen</title>
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body>
@@ -19,19 +20,20 @@
 		?>
 		<div class="content-wrapper">
 			<div class="grid">
-				<div class="col-3-4 floatLeft"><?php Breadcrumbs(''); ?></div>
-				<div class="col-1-4 floatLeft txtRight">hep</div>
+				<div class="col-3-4 floatLeft"><?php // Breadcrumbs(''); ?>&nbsp;</div>
+				<div class="col-1-4 floatLeft txtRight"><p>hep</p></div>
 			</div>
 			<div class="grid">
 				<!-- sidebar column -->
 				<div class="col-1-4 floatLeft">
 					<!-- <h2>Galleri</h2> -->
-					<?php writeSideMenu('Galleri'); ?>
+					<?php writeSideMenu('Rå Rum'); ?>
 				</div>
 				<!-- main column -->
 				<div class="col-3-4 floatLeft">
 					<div class="txtCol">
 						<!-- <h2>INGER LISE RASMUSSEN – EN POLITISK SAMTIDSARKÆOLOG</h2> -->
+						<p>Brug denne jquery menu!!: <a href="http://thecodeplayer.com/walkthrough/vertical-accordion-menu-using-jquery-css3" target="_blank">http://thecodeplayer.com/walkthrough/vertical-accordion-menu-using-jquery-css3</a></p>
 						<h2>Inger Lise Rasmussen - En politisk samtidsarkæolog</h2>
 						<p>Inger Lise Rasmussen (ILR) er en erfaren billedkunstner, hvis CV ikke bare rummer diverse udstillinger i ind- og udland, men også fortæller om international anerkendelse via museumsrepræsentationer i bl.a. USA og Frankrig. Parallelt med sit eget arbejde har hun været tilknyttet nordiske akademier og universiteter som passioneret lærer og formidler af sine kunstfaglige specialer indenfor grafikken. Særlig intens blev interaktionen mellem undervisning og egen skaben, da hun i 1990ernes Danmark fik en central position i genopdagelsen af fotogravuren, som havde ligget mere eller mindre underdrejet siden amerikanerne Alfred Stieglitz og Edward Steichen skabte deres skelsættende suggestive værker i 1900-tallets begyndelse. Også i dag, hvor hun som daglig leder af Højbjerg FotoGrafiske Værksted laver workshops for kunstnere eller giver dem faglig bistand i de veludstyrede mørkekamre og ved dybtrykspressen, er det fotogravuren, der er omdrejningspunktet.</p>
 						<p>Siden midt-halvfemserne har det basale redskab for hendes kunst været et almindeligt SLR-småbilledkamera. Mindst en snes billedserier er i de mellemliggende år begyndt som analoge negativer på sort/hvid film for siden at lyses over på en trykplade, der ved ætsning og sværtning har kunnet danne grundlag for såkaldte dybtryk, som har overrasket publikum ved den lange tonskala og paletten af smukke monokrome varianter fra støvet grønt og rosa over mahognibrunt til violet. Men det egentlig interessante ved disse værker er, at de – trods ovennævnte højæstetiske finish på lækkert kobbertrykspapir og med hånd-afrevne rande – har kant.  Den århusianske billedkunstner har holdning og meninger og bruger gerne sit håndværk til at give disse meninger et sprog og levere en fortælling. Temaerne varierer og forskydes, men er ofte beslægtede. Lad os forfølge et par spor...</p>
@@ -50,5 +52,10 @@
 
 		<?php writeFooter(); ?>
 	</div>
+
+	<!-- load scripts here -->
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" defer="defer"></script>
+	<script src="js/collapseMenu.js" type="text/javscript"></script> <!-- https://app.cssmenumaker.com/?legacy_id=314 -->
+	<!-- jeg skal bruge en anden menu her. Se hovedteksten! -->
 </body>
 </html>

@@ -9,24 +9,25 @@
 	<title>Inger Lise Rasmussen</title>
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 </head>
 
 <body>
 	<div class="page-wrapper">
 		<?php
-			writeHeader('Galleri'); // output the header element
+			writeHeader('Tekster'); // output the header element
 			// writeMsg('Visti prøver argumentet!');
 		?>
 		<div class="content-wrapper">
 			<div class="grid">
-				<div class="col-3-4 floatLeft"><?php Breadcrumbs(''); ?></div>
-				<div class="col-1-4 floatLeft txtRight">hep</div>
+				<div class="col-3-4 floatLeft"><?php // Breadcrumbs(''); ?>&nbsp;</div>
+				<div class="col-1-4 floatLeft txtRight"><p>hep</p></div>
 			</div>
 			<div class="grid">
 				<!-- sidebar column -->
 				<div class="col-1-4 floatLeft">
 					<!-- <h2>Galleri</h2> -->
-					<?php writeSideMenu('Galleri'); ?>
+					<?php writeSideMenu('Rå Rum'); ?>
 				</div>
 				<!-- main column -->
 				<div class="col-3-4 floatLeft">

@@ -47,6 +47,8 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; } /* Impro
 
 a img { border: 0px; }
 
+a { outline: 0; }
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -62,16 +64,18 @@ html {
 }
 body {
 	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 100%;
 	line-height: 1;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased !important;
 	-moz-osx-font-smoothing: grayscale;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-	color: rgba(0,0,0,0.87);
+	color: rgba(32,32,16,0.925); /* rgba(0,0,0,0.87); */
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
+	overflow-y: scroll;
 }
 
 .page-wrapper {
@@ -86,6 +90,8 @@ body {
 	max-width: 1280px;
 	margin: 0px auto;
 	text-align: left;
+	padding: 5em 0px 2em 0px;
+	clear: both;
 }
 .content-wrapper:after {
 	content: "";
@@ -133,7 +139,7 @@ body {
 header {
 	float: left;
 	width: 100%;
-	margin-bottom: 5em;
+	/* margin-bottom: 5em; */
 	text-align: center;
 	background: url(../images/MenuBg4.png) bottom center repeat-x;
 	padding: 1.35em 1.35em 0px 1.35em;
@@ -179,7 +185,10 @@ header nav ul.menu li a {
 	border-radius: 4px 4px 0px 0px;
 	color: rgba(0,0,0,0.87);
 	font-size: 15px;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.03em; /* 0.05em; */
+}
+header nav ul.menu li a:hover {
+	text-decoration: underline;
 }
 header nav ul.menu li a.active-trail {
 	border: 1px solid rgba(0,0,0,0.35);
@@ -205,7 +214,6 @@ header nav ul.langMenu li a {
 	padding: 0px 0.65em 1px 0.65em;
 	width: 100%;
 	line-height: 29px;
-	background: white;
 	display: inline;
 	float: left;
 	text-decoration: none;
@@ -215,6 +223,15 @@ header nav ul.langMenu li a {
 	border-radius: 4px 4px 0px 0px;
 	color: rgba(0,0,0,0.87);
 	font-size: 15px;
+	letter-spacing: 0.03em; /* 0.05em; */
+}
+header nav ul.langMenu li a:hover {
+	text-decoration: underline;
+}
+header nav ul.langMenu li a.active-trail {
+	border: 1px solid rgba(0,0,0,0.35);
+	border-bottom: 1px solid #f7f7f3;
+	background: url(../images/natural_paper_transp.png);
 }
 
 /* left side bar menu */
@@ -222,6 +239,7 @@ ul.leftMenu {
 	float: left;
 	width: 100%;
 	margin-left: -0.5em;
+	margin-bottom: 2em;
 }
 ul.leftMenu .Arrow {
 	display: inline-block;
@@ -244,7 +262,7 @@ ul.leftMenu li {
 ul.leftMenu li a {
 	padding: 0px 0.5em 0px 0.5em;
 	width: auto; /* 100%; */
-	line-height: 1.8em; /* 2em */
+	line-height: 1.75em; /* 2em */
 	display: inline-block;
 	float: left;
 	text-decoration: none;
@@ -252,20 +270,15 @@ ul.leftMenu li a {
 	/* border-bottom: 1px solid rgba(0,0,0,0.05); */
 	color: rgba(0,0,0,0.87);
 	font-size: 15px;
+	letter-spacing: 0.03em; /* 0.05em; */
 	/* background: white; */
 }
-ul.leftMenu li a {
-	padding: 0px 0.5em 0px 0.5em;
-	width: auto; /* 100%; */
-	line-height: 1.8em; /* 2em */
-	display: inline-block;
-	float: left;
-	text-decoration: none;
-	margin: 0px;
-	/* border-bottom: 1px solid rgba(0,0,0,0.05); */
-	color: rgba(0,0,0,0.87);
-	font-size: 15px;
-	/* background: white; */
+ul.leftMenu li a:hover {
+	/* font-style: italic; */
+	text-decoration: underline;
+}
+ul.leftMenu li a.active-trail {
+	font-style: italic;
 }
 ul.leftMenu li a.active-trail .Arrow {
 	background: url(../images/Arrows.png) -12px -1px no-repeat;
@@ -290,12 +303,28 @@ ul.Breadcrumbs li a {
 	font-size: 15px;
 }
 
+footer {
+	padding: 1em 0px;
+	border-top: 1px solid rgba(0,0,0,0.35);
+}
+footer .inside {
+	max-width: 1280px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.txtRight {
+	text-align: right;
+}
+
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* typography */
 h1, h2, h3, h4, h5, h6 {
 	margin: 0px 0px 1.35em 0px;
-	line-height: 1.35em;
-	color: #5D5D57;
+	line-height: 1.325em;
+	/* color: #5D5D57; */
+	color (32,32,16,0.70);
 	font-weight: 700;
 	text-shadow: 0 1px 0 rgba(255,255,255,1);
 }
@@ -307,8 +336,9 @@ p {
 }
 
 .txtCol {
-	max-width: 700px;
+	max-width: 36em; /* 40em; /* 700px; */
 	margin: 0px auto;
+	/* text-align: justify; */
 }
 
 h1 {
@@ -317,7 +347,7 @@ h1 {
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 26px; /* 25px; */ /* 26px for Roboto */
 }
 
 h3 {

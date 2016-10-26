@@ -1,6 +1,7 @@
 <?php
 
-	$Menu = array('Forside', 'Galleri', 'CV', 'Tekster', 'Kontakt', 'Links', 'Presse');
+	// $Menu = array('Forside', 'Galleri', 'CV', 'Tekster', 'Kontakt', 'Links', 'Presse');
+	$Menu = array('Forside', 'Galleri', 'CV', 'Tekster', 'Kontakt');
 	$langMenu = array('Da', 'Eng');
 
 	// get the length of the menu arrays
@@ -16,16 +17,17 @@
 		echo '<nav>';
 		// right language menu here
 		echo '<ul class="langMenu">';
-		echo '<li><a href="#">Da</a>';
+		echo '<li><a href="#" class="active-trail">Da</a>';
 		echo '<li><a href="#">Eng</a>';
 		echo '</ul>';
 		// main menu here
 		echo '<ul class="menu">';
-		for ($x = 0; $x < $menuLen; $x++) {
+		echo '<li><a href="index.php">' . $Menu[0] . '</a>'; // the first line here is index.php
+		for ($x = 1; $x < $menuLen; $x++) {
 			if ($Menu[$x] == $activeTab) {
-				echo '<li><a href="#" class="active-trail">' . $Menu[$x] . '</a>';
+				echo '<li><a href="' . $Menu[$x] .'.php" class="active-trail">' . $Menu[$x] . '</a>';
 			} else {
-				echo '<li><a href="#">' . $Menu[$x] . '</a>';
+				echo '<li><a href="' . $Menu[$x] .'.php">' . $Menu[$x] . '</a>';
 			}
 		}
 		echo '</ul>';
