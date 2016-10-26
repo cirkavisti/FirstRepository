@@ -7,7 +7,7 @@
 		'Villes Nouvelles',
 		'Folies',
 		'Abraxas',
-		'Efter Kampagenen',
+		'Efter Kampagnen',
 		'Vor Dem Gesetz'
 	);
 
@@ -23,15 +23,15 @@
 		echo '<ul class="leftMenu">';
 		for ($x = 0; $x < $menuLen; $x++) {
 			if ($leftMenu[$x] == $activeTab) {
-				echo '<li><a href="#" class="active-trail">' . $leftMenu[$x] . '</a>';
+				echo '<li><a href="#" class="active-trail"><span class="Arrow">></span>' . $leftMenu[$x] . '</a>';
 				// print the subLeftMenu for the active tab
 				echo '<ul>';
 				for ($c = 0; $c < $subMenuLen; $c++) {
-					echo '<li><a href="#">' . $subLeftMenu[$c] . '</a>';
+					echo '<li><a href="#"><span class="Arrow">></span>' . $subLeftMenu[$c] . '</a>';
 				}
 				echo '</ul>';
 			} else {
-				echo '<li><a href="#">' . $leftMenu[$x] . '</a>';
+				echo '<li><a href="#"><span class="Arrow">></span>' . $leftMenu[$x] . '</a>';
 			}
 		}
 		echo '</ul>';
