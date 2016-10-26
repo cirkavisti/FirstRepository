@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* BASIC CONSCIOUS RESETs +++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* make HTML5 elements block-level for consistent styling */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1 }
+
+/* Basic Table styling */
+table { border-collapse: collapse; border-spacing: 0px; }
+table button, table input { *overflow: auto } /* for IE9 overflow bug */
+td { vertical-align: top; }
+
+/* Basic Form styling */
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+
+/* Basic List styling */
+ul, ol { margin-bottom: 1.5em; padding: 0px; /* 14px; */ /* 3em; */ }
+ul ul, ol ol { margin: 0; padding: 0px; } /* only margin on top level lists */
+dd { margin: 0 0 0 3em; }
+li { line-height: 1.5em; margin-bottom: 0px; list-style-type: none; }
+
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; font-size: 0.8462em; /* 11/13 */ line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: 'courier new', monospace; font-size: 1em; line-height: 1.4em; background: #FFEEEE; } 
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; } /* Improve readability of pre-formatted text in all browsers */
+/* basic resets is inside html5reset */
+
+* {
+  /* prevent text breakouts - http://coding.smashingmagazine.com/2012/08/13/coding-qa-with-chris-coyier-responsive-sprites-responsive-font-sizing-media-query-efficiency-more/ */
+  /* -ms-word-break: break-all; word-break: break-all; word-break: break-word; */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  margin: 0px; padding: 0px;
+}
+*, *:after, *:before {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+a img { border: 0px; }
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* reset done, style content */
+html { 
+	height: 100%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	line-height: 1;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	color: rgba(0,0,0,0.87);
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+.page-wrapper {
+	width: 100%;
+	min-height: 100%;
+	background: #F5F4EB url(../images/natural_paper_transp.png);
+	/* background: #F5F4EB; */
+	text-align: center;
+	padding: 0px; /* padding: 1.75em 2em; */
+}
+.content-wrapper {
+	max-width: 960px;
+	margin: 0px auto;
+	text-align: left;
+}
+.content-wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Front page elements */
+.front-wrapper {
+	height: 100%;
+	width: 100%;
+	background: #F5F4EB url(../images/natural_paper_transp.png);
+}
+.front-wrapper h2.topHeader {
+	position: absolute;
+	top: 15vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	margin: 0px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.front-wrapper .frontImage {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0px auto;
+	height: 50vh;
+	width: auto;
+	-webkit-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.15);
+}
+.front-wrapper h3.bottomSubheader {
+	position: absolute;
+	top: 85vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	margin: 0px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+header {
+	float: left;
+	width: 100%;
+	margin-bottom: 5em;
+	text-align: center;
+	background: url(../images/MenuBg4.png) bottom center repeat-x;
+	padding: 1.35em 1.35em 0px 1.35em;
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header nav {
+	float: left;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+header nav ul.menu {
+	float: left;
+	width: auto; /* 100%; */
+	margin: 0px auto;
+	padding: 0px;
+	/* background: lightyellow; */
+}
+header nav ul.menu li {
+	display: inline-block;
+	float: left;
+	margin: 0px; /* 0px 0.35em 0px 0px; */
+	padding: 0px;
+	width: auto; /* 6.6666%; /* 8.3333%; */
+}
+header nav ul.menu li a {
+	padding: 0px 1.65em 1px 1.65em;
+	width: 100%;
+	line-height: 29px;
+	/* background: white; */
+	display: inline-block;
+	float: left;
+	text-decoration: none;
+	margin: 0px;
+	border: 1px solid transparent;
+	border-bottom: 0px;
+	border-radius: 4px 4px 0px 0px;
+	color: rgba(0,0,0,0.87);
+	font-size: 15px;
+	letter-spacing: 0.05em;
+}
+header nav ul.menu li a.active-trail {
+	border: 1px solid rgba(0,0,0,0.35);
+	border-bottom: 1px solid #f7f7f3;
+	background: url(../images/natural_paper_transp.png);
+}
+
+/* her er menuen til højre */
+header nav ul.langMenu {
+	display: inline;
+	float: right;
+	margin: 0px auto;
+	padding: 0px;
+}
+header nav ul.langMenu li {
+	display: inline;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+}
+header nav ul.langMenu li a {
+	padding: 0px 0.65em 1px 0.65em;
+	width: 100%;
+	line-height: 29px;
+	background: white;
+	display: inline;
+	float: left;
+	text-decoration: none;
+	margin: 0px;
+	border: 1px solid transparent;
+	border-bottom: 0px;
+	border-radius: 4px 4px 0px 0px;
+	color: rgba(0,0,0,0.87);
+	font-size: 15px;
+}
+
+/* left side bar menu */
+ul.leftMenu {
+	float: left;
+	width: 100%;
+}
+ul.leftMenu li {
+	display: inline-block;
+	float: left;
+	margin: 0px; /* 0px 0.35em 0px 0px; */
+	padding: 0px;
+	width: 100%; /* 6.6666%; /* 8.3333%; */
+}
+ul.leftMenu li a {
+	padding: 0px;
+	width: 100%;
+	line-height: 2em;
+	display: inline-block;
+	float: left;
+	text-decoration: none;
+	margin: 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	color: rgba(0,0,0,0.87);
+	font-size: 15px;
+}
+ul.leftMenu ul li a {
+	padding: 0px 0px 0px 1.35em; /* indent links here */
+	width: 100%;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px 0px 1.35em 0px;
+	line-height: 1.35em;
+	color: #5D5D57;
+	font-weight: 700;
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0px 0px 1.5em 0px
+}
+
+.txtCol {
+	max-width: 700px;
+	margin: 0px auto;
+}
+
+h1 {
+	font-size: 64px;
+	margin: 0px 0px 0.5em 0px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 19px;
+}
