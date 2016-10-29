@@ -25,93 +25,15 @@
 			</div>
 			<div class="grid">
 				<!-- sidebar column -->
-				<!-- <div class="col-1-4 floatLeft">
-					<?php // include("templates/GalleriLeftmenu.html"); ?>
-				</div> -->
+				<div class="col-1-4 floatLeft">
+					<!-- <h2>Galleri</h2> -->
+					<?php writeSideMenu('Rå Rum'); ?>
+				</div>
 				<!-- main column -->
-				<div class="col-1-1 floatLeft">
+				<div class="col-3-4 floatLeft">
 					<h2>Curriculum Vitae</h2>
-					<p><b>Profession</b><br>Grafiker</p>
-					<div class="CVWrapper">
-						<!-- header -->
-						<h3>Uddannelse</h3>
-						<div class="YearRow">
-							<div class="left">1968-71</div>
-							<div class="right">Det Jyske Kunstakademi, Århus</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1971-73</div>
-							<div class="right">Kunstakademiet, Beograd, Jugoslavien</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1974-75</div>
-							<div class="right">Kunsthåndværkerskolen, Prag, Tjekkoslovakiet</div>
-						</div>
-						
-						<!-- Udlandsophold -->
-						<h3>Udlandsophold- og rejser</h3>
-						<div class="YearRow">
-							<div class="left">1977</div>
-							<div class="right">San Cataldo, Italien</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1978</div>
-							<div class="right">Atelier Nord, Oslo</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1980-81</div>
-							<div class="right">Atelier 17 Paris</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1983-84</div>
-							<div class="right">Pratt Graphics Center, New York</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1996</div>
-							<div class="right">Det Danske Institut for Videnskab og Kunst, Rom</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">2004</div>
-							<div class="right">International Artists Colony, Visegrad, Republika Srpska<br>
-							The Sicevo 2004 Art Colony, Nis, Serbien</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">2005</div>
-							<div class="right">...</div>
-						</div>
-
-						<!-- Udlandsophold -->
-						<h3>Legater</h3>
-						<div class="YearRow">
-							<div class="left">1976</div>
-							<div class="right">Danmarks Nationalbanks Jubilæumsfond</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1980</div>
-							<div class="right">Knud Højgårds Fond</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1983</div>
-							<div class="right">Knud Højgårds Fond<br>Danmark-Amerika Fondet<br>Fulbright rejselegat 1983</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1994</div>
-							<div class="right">Norsk Kulturråds legat (s.m. Peter Esdaile)</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1996</div>
-							<div class="right">Dronning Ingrids Romerske Fond</div>
-						</div>
-						<div class="YearRow">
-							<div class="left">1997</div>
-							<div class="right">...</div>
-						</div>
-					</div> <!-- eof cvwrapper -->
-
-
-
-					
-					
+					<p><b>Profession</b><br>
+					Grafiker</p>
 					<p><b>Uddannelse</b><br>
 					1968-71 Det Jyske Kunstakademi, Århus<br>
 					1971-73 Kunstakademiet, Beograd, Jugoslavien<br>
@@ -154,15 +76,12 @@
 					2016 Statens Kunstfond<br>
 					2016 Grosserer L.F. Foghts Fond</p>
 				</div>
+
+
 			</div> <!-- end of grid -->
 		</div>
 
 		<?php writeFooter(); ?>
 	</div>
-
-	<!-- load scripts here -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-	<script src="js/collapse.js" type="text/javascript"></script>
 </body>
 </html>

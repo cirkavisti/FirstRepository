@@ -1,3 +1,65 @@
+#accordian {
+	background: transparent; /* #004050; */
+	width: auto; /* 250px; */
+	margin: 0px auto; /* 100px auto 0 auto; */
+	font-size: 15px;
+}
+/*heading styles*/
+#accordian h3 {
+	/* font-size: 12px;
+	line-height: 34px;
+	padding: 0 10px;  */
+	font-size: 15px;
+	line-height: 1.8em;
+	font-weight: 400;
+	cursor: pointer;
+	/*fallback for browsers not supporting gradients*/
+	background: pink; /* #003040; 
+	background: linear-gradient(#003040, #002535); */
+	margin: 0px;
+	text-shadow: none; /*  0 0 1px rgba(255, 255, 255, 0.7); */
+}
+/*heading hover effect*/
+#accordian h3:hover {
+	/* text-shadow: 0 0 1px rgba(255, 255, 255, 0.7); */
+	text-decoration: underline;
+}
+/*iconfont styles*/
+#accordian h3 span {
+	/* font-size: 16px; */
+	margin-right: 10px;
+}
+/*list items*/
+#accordian li {
+	list-style-type: none;
+}
+#accordian li a {
+	font-size: 15px;
+	letter-spacing: 0.035em;
+	line-height: 1.8em;
+}
+/*links*/
+#accordian ul ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 0 15px;
+	/* transition for smooth hover animation */
+	/* transition: all 0.05s; */ /* 0.15s; */
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+	/* background: red /* #003545;
+	border-left: 5px solid lightgreen; */
+	text-decoration: underline;
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active ul {
+	display: block;
+}
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -234,106 +296,63 @@ header nav ul.langMenu li a.active-trail {
 	background: url(../images/natural_paper_transp.png);
 }
 
-/* left side bar menu -accordian */
-#accordian {
-	background: transparent;
-	width: auto;
-	margin: 0px auto;
-	font-size: 15px;
+/* left side bar menu */
+ul.leftMenu {
+	float: left;
+	width: 100%;
+	margin-left: -0.5em;
+	margin-bottom: 2em;
 }
-/*heading styles*/
-#accordian h3 {
-	font-size: 15px;
-	line-height: 1.8em;
-	letter-spacing: 0.035em;
-	font-weight: 400;
-	cursor: pointer;
-	color: rgba(32,32,16,0.925); /* rgba(0,0,0,0.87); */
-	margin: 0px;
-	text-shadow: none;
-	/* background: pink; */
-	padding-right: 0.75em;
-	display: inline-block;
-}
-#accordian h3 span.Arrow {
+ul.leftMenu .Arrow {
 	display: inline-block;
 	line-height: 1.8em;
 	width: 12px;
 	height: 14px;
 	background: url(../images/Arrows.png) 0px 0px no-repeat;
+	/* border: 1px solid red; */
 	text-indent: -999em;
 	vertical-align: middle;
 	margin-right: 0.35em;
-	/* transition: all 0.5s; */
 }
-#accordian li.active h3 {
+ul.leftMenu li {
+	display: inline-block;
+	float: left;
+	margin: 0px; /* 0px 0.35em 0px 0px; */
+	padding: 0px;
+	width: 100%; /* 6.6666%; /* 8.3333%; */
+}
+ul.leftMenu li a {
+	padding: 0px 0.5em 0px 0.5em;
+	width: auto; /* 100%; */
+	line-height: 1.75em; /* 2em */
+	display: inline-block;
+	float: left;
+	text-decoration: none;
+	margin: 0px;
+	/* border-bottom: 1px solid rgba(0,0,0,0.05); */
+	color: rgba(0,0,0,0.87);
+	font-size: 15px;
+	letter-spacing: 0.03em; /* 0.05em; */
+	/* background: white; */
+}
+ul.leftMenu li a:hover {
+	/* font-style: italic; */
+	text-decoration: underline;
+}
+ul.leftMenu li a.active-trail {
 	font-style: italic;
 }
-/* the arrow on the active h3 is turning downwards */
-#accordian li.active h3 span {
+ul.leftMenu li a.active-trail .Arrow {
 	background: url(../images/Arrows.png) -12px -1px no-repeat;
 }
-/*heading hover effect*/
-#accordian h3:hover {
-	/* text-shadow: 0 0 1px rgba(255, 255, 255, 0.7); */
-	text-decoration: underline;
-}
 
-/*list items*/
-#accordian li {
-	list-style-type: none;
-}
-#accordian li a {
-	font-size: 15px;
-	letter-spacing: 0.035em;
-	line-height: 1.8em;
-	color: rgba(32,32,16,0.925); /* rgba(0,0,0,0.87); */
-
-}
-#accordian li span.Arrow {
-	display: inline-block;
-	line-height: 1.8em;
-	width: 12px;
-	height: 14px;
-	background: url(../images/Arrows.png) 0px 0px no-repeat;
-	/* border: 1px solid red; */
-	text-indent: -999em;
-	vertical-align: middle;
-	margin-right: 0.35em;
-}
-/*links*/
-#accordian ul ul li a {
-	text-decoration: none;
-	display: inline-block; /* block */
-	/* background: pink; */
-	padding: 0 0.75em 0 0; /* 15px; */
+/* second level menu */
+ul.leftMenu ul li a {
+	/* padding: 0px 0px 0px 1.35em; /* indent links here */
+	/* padding-left: 1.5em; */
 	margin-left: 1em;
-	/* transition for smooth hover animation */
-	/* transition: all 0.05s; */ /* 0.15s; */
+	width: auto; /* 100%; */
 }
-#accordian ul ul li span.Arrow {
-	display: inline-block;
-	line-height: 1.8em;
-	width: 12px;
-	height: 14px;
-	background: url(../images/Arrows.png) -24px 0px no-repeat;
-	/* border: 1px solid red; */
-	text-indent: -999em;
-	vertical-align: middle;
-	margin-right: 0.35em;
-}
-/*hover effect on links*/
-#accordian ul ul li a:hover {
-	text-decoration: underline;
-}
-/*Lets hide the non active LIs by default*/
-#accordian ul ul {
-	display: none;
-}
-#accordian li.active ul {
-	display: block;
-}
-
 
 /* Breadcrumbs */
 ul.Breadcrumbs {}
@@ -396,58 +415,6 @@ h2 {
 h3 {
 	font-size: 19px;
 }
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-/* CV classes */
-.CVWrapper {
-  display: block;
-  line-height: normal;
-  margin: 0px 0px 2em 0px;
-}
-
-.CVWrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.CVWrapper h3 {
-  margin: 1.35em 0px 0.65em 0px;
-}
-.CVWrapper h3:first-child {
-  margin: 0px 0px 0.65em 0px; /* space on bottom element */
-}
-
-.CVWrapper .YearRow {
-  /* border-bottom: 1px dotted #CCC; */
-  padding: 0.35em 0px 0px 0px;
-}
-
-.CVWrapper .YearRow .left {
-  width: 4.5em; /* 70px; /* 65 */
-  display: block;
-  float: left;
-  font-weight: bold;
-  /* 400; /* 700; */
-  line-height: 1.5em;
-  padding: 1px 0px;
-}
-
-.CVWrapper .YearRow .right {
-  width: auto;
-  display: block;
-  margin-left: 4.5em; /* 70px; /* 65px; */
-  border-bottom: 1px dotted #CCC;
-  font-weight: 400;
-  line-height: 1.5em;
-  padding: 1px 0px 0.35em 0px;
-}
-
-.CVWrapper .views-row-last {
-  margin: 0px 0px 2em 0px;
-}
-
 
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */

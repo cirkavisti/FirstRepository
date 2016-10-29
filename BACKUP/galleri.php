@@ -15,7 +15,7 @@
 <body>
 	<div class="page-wrapper">
 		<?php
-			writeHeader('Tekster'); // output the header element
+			writeHeader('Galleri'); // output the header element
 			// writeMsg('Visti prøver argumentet!');
 		?>
 		<div class="content-wrapper">
@@ -27,13 +27,100 @@
 				<!-- sidebar column -->
 				<div class="col-1-4 floatLeft">
 					<!-- <h2>Galleri</h2> -->
-					<!-- collapse menu -->
-					<?php include("templates/GalleriLeftmenu.html"); ?>
+					<?php // writeSideMenu('Rå Rum'); ?>
+					<!-- trying collapse menu -->
+					<div id="accordian">
+						<ul>
+							<li class="active">
+								<h3><span class="icon-dashboard"></span>Rå Rum</h3>
+								<ul>
+									<li><a href="Rå Rum.php"><span class="Arrow">&gt;</span>Hå ved Havet</a></li>
+									<li><a href="Rå Rum.php"><span class="Arrow">&gt;</span>PRORA 1:1000</a></li>
+									<li><a href="Rå Rum.php"><span class="Arrow">&gt;</span>Villes Nouvelles</a></li>
+									<li><a href="Rå Rum.php"><span class="Arrow">&gt;</span>Folies</a></li>
+									<li><a href="Rå Rum.php"><span class="Arrow">&gt;</span>Abraxas</a></li>
+									<li><a href="Rå Rum.php"><span class="Arrow">&gt;</span>Efter Kampagnen</a></li>
+									<li><a href="Rå Rum.php"><span class="Arrow">&gt;</span>Vor Dem Gesetz</a></li>
+								</ul>
+							</li>
+							<!-- we will keep this LI open by default -->
+							<li>
+								<h3><span class="icon-tasks"></span>Les Tour Fleuries</h3>
+								<ul>
+									<li><a href="#"><span class="Arrow">&gt;</span>Note</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3><span class="icon-calendar"></span>Tageskarten</h3>
+								<ul>
+									<li><a href="#"><span class="Arrow">&gt;</span>Note</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3><span class="icon-heart"></span>Brilliant City</h3>
+								<ul>
+									<li><a href="#"><span class="Arrow">&gt;</span>Mandarinernes Have</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Foto-Mania</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Lygterne Slukkes</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Byen Forsvinder</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Asiatisk Puramide</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Migrant Campus</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Græshoppesamlerne</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Verden Vælter</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Tempel-Templer</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Nattens Facader</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Bryllupsfotografiet</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Brilliant City</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Note</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3><span class="icon-heart"></span>Reqem Vandring i Ørkenen</h3>
+								<ul>
+									<li><a href="#"><span class="Arrow">&gt;</span>Morgen</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Formiddag</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Middag</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Eftermiddag</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Aften</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Note</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3><span class="icon-heart"></span>Reqem Vandring i Ørkenen II</h3>
+								<ul>
+									<li><a href="#"><span class="Arrow">&gt;</span>Nedstigning fra El Deir</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Helligdom</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Turister</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3><span class="icon-heart"></span>Višegrad</h3>
+								<ul>
+									<li><a href="#"><span class="Arrow">&gt;</span>Note</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3><span class="icon-heart"></span>Troms</h3>
+								<ul>
+									<li><a href="#"><span class="Arrow">&gt;</span>Note</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3><span class="icon-heart"></span>Udstillinger</h3>
+								<ul>
+									<li><a href="#"><span class="Arrow">&gt;</span>Brilliant City</a></li>
+									<li><a href="#"><span class="Arrow">&gt;</span>Reqem Vandring i Ørkenen I &amp; II</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
 				</div>
 				<!-- main column -->
 				<div class="col-3-4 floatLeft">
 					<div class="txtCol">
 						<!-- <h2>INGER LISE RASMUSSEN – EN POLITISK SAMTIDSARKÆOLOG</h2> -->
+						<p>Brug denne jquery menu!!: <a href="http://thecodeplayer.com/walkthrough/vertical-accordion-menu-using-jquery-css3" target="_blank">http://thecodeplayer.com/walkthrough/vertical-accordion-menu-using-jquery-css3</a></p>
 						<h2>Inger Lise Rasmussen - En politisk samtidsarkæolog</h2>
 						<p>Inger Lise Rasmussen (ILR) er en erfaren billedkunstner, hvis CV ikke bare rummer diverse udstillinger i ind- og udland, men også fortæller om international anerkendelse via museumsrepræsentationer i bl.a. USA og Frankrig. Parallelt med sit eget arbejde har hun været tilknyttet nordiske akademier og universiteter som passioneret lærer og formidler af sine kunstfaglige specialer indenfor grafikken. Særlig intens blev interaktionen mellem undervisning og egen skaben, da hun i 1990ernes Danmark fik en central position i genopdagelsen af fotogravuren, som havde ligget mere eller mindre underdrejet siden amerikanerne Alfred Stieglitz og Edward Steichen skabte deres skelsættende suggestive værker i 1900-tallets begyndelse. Også i dag, hvor hun som daglig leder af Højbjerg FotoGrafiske Værksted laver workshops for kunstnere eller giver dem faglig bistand i de veludstyrede mørkekamre og ved dybtrykspressen, er det fotogravuren, der er omdrejningspunktet.</p>
 						<p>Siden midt-halvfemserne har det basale redskab for hendes kunst været et almindeligt SLR-småbilledkamera. Mindst en snes billedserier er i de mellemliggende år begyndt som analoge negativer på sort/hvid film for siden at lyses over på en trykplade, der ved ætsning og sværtning har kunnet danne grundlag for såkaldte dybtryk, som har overrasket publikum ved den lange tonskala og paletten af smukke monokrome varianter fra støvet grønt og rosa over mahognibrunt til violet. Men det egentlig interessante ved disse værker er, at de – trods ovennævnte højæstetiske finish på lækkert kobbertrykspapir og med hånd-afrevne rande – har kant.  Den århusianske billedkunstner har holdning og meninger og bruger gerne sit håndværk til at give disse meninger et sprog og levere en fortælling. Temaerne varierer og forskydes, men er ofte beslægtede. Lad os forfølge et par spor...</p>
