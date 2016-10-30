@@ -30,11 +30,14 @@
 				</div> -->
 				<!-- main column -->
 				<div class="col-1-1 floatLeft">
-					<h2>Curriculum Vitae</h2>
+					<!-- <h2>Curriculum Vitae</h2> -->
 					<p><b>Profession</b><br>Grafiker</p>
 					<div class="CVWrapper">
 						<!-- header -->
 						<h3>Uddannelse</h3>
+						<!-- <p>1968-71 Det Jyske Kunstakademi, Århus<br>
+						1971-73 Kunstakademiet, Beograd, Jugoslavien<br>
+						1974-75 Kunsthåndværkerskolen, Prag, Tjekkoslovakiet</p> -->
 						<div class="YearRow">
 							<div class="left">1968-71</div>
 							<div class="right">Det Jyske Kunstakademi, Århus</div>
@@ -48,6 +51,20 @@
 							<div class="right">Kunsthåndværkerskolen, Prag, Tjekkoslovakiet</div>
 						</div>
 						
+						<!-- <p><b>Udlandsophold- og rejser</b><br>
+						1977 San Cataldo, Italien<br>
+						1978 Atelier Nord, Oslo<br>
+						1980-81 Atelier 17 Paris<br>
+						1983-84 Pratt Graphics Center, New York<br>
+						1996 Det Danske Institut for Videnskab og Kunst, Rom<br>
+						2004 International Artists Colony, Visegrad, Republika Srpska<br>
+						The Sicevo 2004 Art Colony, Nis, Serbien<br>
+						2007 Kina studierejse<br>
+						2008 Kina studierejse<br>
+						2010 Jordan studierejse<br>
+						2011 Jordan<br>
+						2015 Studieophold på Det Danske Institut i Athen</p> -->
+
 						<!-- Udlandsophold -->
 						<h3>Udlandsophold- og rejser</h3>
 						<div class="YearRow">
@@ -76,8 +93,20 @@
 							The Sicevo 2004 Art Colony, Nis, Serbien</div>
 						</div>
 						<div class="YearRow">
-							<div class="left">2005</div>
-							<div class="right">...</div>
+							<div class="left">2007</div>
+							<div class="right">Kina studierejse</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">2008</div>
+							<div class="right">Kina studierejse</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">2010</div>
+							<div class="right">Jordan studierejse</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">2015</div>
+							<div class="right">Studieophold på Det Danske Institut i Athen</div>
 						</div>
 
 						<!-- Udlandsophold -->
@@ -92,7 +121,7 @@
 						</div>
 						<div class="YearRow">
 							<div class="left">1983</div>
-							<div class="right">Knud Højgårds Fond<br>Danmark-Amerika Fondet<br>Fulbright rejselegat 1983</div>
+							<div class="right">Knud Højgårds Fond; Danmark-Amerika Fondet; Fulbright rejselegat 1983</div>
 						</div>
 						<div class="YearRow">
 							<div class="left">1994</div>
@@ -104,31 +133,36 @@
 						</div>
 						<div class="YearRow">
 							<div class="left">1997</div>
+							<div class="right">Århus Kommunes Kunstnerstipendium</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">1999</div>
+							<div class="right">Århus Kommunes Kunstnerstipendium</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">2000</div>
+							<div class="right">Statens Kunstfond, rejselegat; Det Danske Kulturinstitut</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">2001</div>
+							<div class="right">Arbejdslegat Statens Kunstfond. Projektstøtte Statens Kunstfond (arkitekturudvalget s.m. arkitekterne Torben Nielsen, Susanne Jensen, Rasmus Grønbæk Hansen)</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">2002</div>
+							<div class="right">Center for dansk billedkunst</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">2003</div>
+							<div class="right">Århus Kommunes Kunstnerstipendium</div>
+						</div>
+						<div class="YearRow">
+							<div class="left">...</div>
 							<div class="right">...</div>
 						</div>
 					</div> <!-- eof cvwrapper -->
 
-
-
 					
-					
-					<p><b>Uddannelse</b><br>
-					1968-71 Det Jyske Kunstakademi, Århus<br>
-					1971-73 Kunstakademiet, Beograd, Jugoslavien<br>
-					1974-75 Kunsthåndværkerskolen, Prag, Tjekkoslovakiet</p>
-					<p><b>Udlandsophold- og rejser</b><br>
-					1977 San Cataldo, Italien<br>
-					1978 Atelier Nord, Oslo<br>
-					1980-81 Atelier 17 Paris<br>
-					1983-84 Pratt Graphics Center, New York<br>
-					1996 Det Danske Institut for Videnskab og Kunst, Rom<br>
-					2004 International Artists Colony, Visegrad, Republika Srpska<br>
-					The Sicevo 2004 Art Colony, Nis, Serbien<br>
-					2007 Kina studierejse<br>
-					2008 Kina studierejse<br>
-					2010 Jordan studierejse<br>
-					2011 Jordan<br>
-					2015 Studieophold på Det Danske Institut i Athen</p>
+
 					<p><b>Legater</b><br>
 					1976 Danmarks Nationalbanks Jubilæumsfond<br>
 					1980 Knud Højgårds Fond<br>

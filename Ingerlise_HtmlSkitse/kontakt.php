@@ -24,21 +24,13 @@
 				<div class="col-1-4 floatLeft txtRight"><p>hep</p></div>
 			</div>
 			<div class="grid">
-				<!-- sidebar column -->
-				<div class="col-1-4 floatLeft">
-					<!-- <h2>Galleri</h2> -->
-					<!-- collapse menu -->
-					<?php include("templates/GalleriLeftmenu.html"); ?>
-				</div>
 				<!-- main column -->
-				<div class="col-3-4 floatLeft">
-					<div class="txtCol">
-						<h2>Inger Lise Rasmussen</h2>
-						<p>Sjællandsgade 135<br>
-						8000 Aarhus C</p>
-						<p>+45 20373003<br>
-						ingerlise.rasmussen@gmail.com</p>
-					</div>
+				<div class="col-1-1 floatLeft">
+					<h2>Inger Lise Rasmussen</h2>
+					<p>Sjællandsgade 135<br>
+					8000 Aarhus C</p>
+					<p>+45 20373003<br>
+					ingerlise.rasmussen@gmail.com</p>
 				</div>
 
 

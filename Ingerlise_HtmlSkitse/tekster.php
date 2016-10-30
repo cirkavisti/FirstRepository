@@ -28,7 +28,7 @@
 				<div class="col-1-4 floatLeft">
 					<!-- <h2>Galleri</h2> -->
 					<!-- collapse menu -->
-					<?php include("templates/GalleriLeftmenu.html"); ?>
+					<?php include("templates/TeksterLeftmenu.html"); ?>
 				</div>
 				<!-- main column -->
 				<div class="col-3-4 floatLeft">

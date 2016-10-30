@@ -57,6 +57,14 @@ a { outline: 0; }
     background: #b3d4fc;
     text-shadow: none;
 }
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
 
 /* reset done, style content */
 html { 
@@ -283,12 +291,20 @@ header nav ul.langMenu li a.active-trail {
 #accordian li {
 	list-style-type: none;
 }
+/* last element in submenu has bottommargin */
+#accordian ul ul li:last-child {
+	/* background: pink; */
+	margin-bottom: 0.2em;
+}
+#accordian ul ul li:first-child {
+	/* background: pink; */
+	margin-top: 0.1em;
+}
 #accordian li a {
 	font-size: 15px;
 	letter-spacing: 0.035em;
-	line-height: 1.8em;
+	line-height: 24px; /* 1.8em; */
 	color: rgba(32,32,16,0.925); /* rgba(0,0,0,0.87); */
-
 }
 #accordian li span.Arrow {
 	display: inline-block;
@@ -374,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.4375em; /* 23px; /* 24px */
 	margin: 0px 0px 1.5em 0px
 }
 
@@ -401,47 +417,45 @@ h3 {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /* CV classes */
 .CVWrapper {
-  display: block;
-  line-height: normal;
-  margin: 0px 0px 2em 0px;
+	display: block;
+	line-height: normal;
+	margin: 0px 0px 2em 0px;
 }
-
 .CVWrapper:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .CVWrapper h3 {
-  margin: 1.35em 0px 0.65em 0px;
+	font-size: 16px;
+	margin: 1.75em 0px 0.35em 0px;
 }
 .CVWrapper h3:first-child {
-  margin: 0px 0px 0.65em 0px; /* space on bottom element */
+	margin: 0px 0px 0.35em 0px; /* space on bottom element */
 }
 
 .CVWrapper .YearRow {
-  /* border-bottom: 1px dotted #CCC; */
-  padding: 0.35em 0px 0px 0px;
+	padding: 0.35em 0px 0px 0px;
 }
 
 .CVWrapper .YearRow .left {
-  width: 4.5em; /* 70px; /* 65 */
-  display: block;
-  float: left;
-  font-weight: bold;
-  /* 400; /* 700; */
-  line-height: 1.5em;
-  padding: 1px 0px;
+	width: 4.5em; /* 70px; /* 65 */
+	display: block;
+	float: left;
+	/* font-weight: bold; */
+	line-height: 1.4375em; /* line-height: 1.5em; */
+	padding: 0px; /* 1px 0px; */
 }
 
 .CVWrapper .YearRow .right {
-  width: auto;
-  display: block;
-  margin-left: 4.5em; /* 70px; /* 65px; */
-  border-bottom: 1px dotted #CCC;
-  font-weight: 400;
-  line-height: 1.5em;
-  padding: 1px 0px 0.35em 0px;
+	width: auto;
+	display: block;
+	margin-left: 4.5em; /* 70px; /* 65px; */
+	border-bottom: 1px solid rgba(0,0,0,0.1); /* 1px dotted #CCC; */
+	font-weight: 400;
+	line-height: 1.4375em; /* line-height: 1.5em; */
+	padding: 0px 0px 0.2em 0px; /* 1px 0px 0.35em 0px; */
 }
 
 .CVWrapper .views-row-last {
